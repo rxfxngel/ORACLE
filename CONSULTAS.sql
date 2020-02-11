@@ -50,6 +50,13 @@
   FROM   employees
   WHERE  salary >= 10000
   OR     job_id LIKE '%MAN%' ;
+  
+ -- OPERADOR NOT IN
+  SELECT last_name, job_id
+  FROM   employees
+  WHERE  job_id 
+         NOT IN ('IT_PROG', 'ST_CLERK', 'SA_REP') ;
+
 
 
 
