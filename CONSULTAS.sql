@@ -106,6 +106,15 @@ AND    salary > 10000;
    departments
    ORDER BY department_id
    FETCH FIRST 5 ROWS ONLY;
+   
+ -- seleccionar desde el 5 hasta el 10
+ 
+   SELECT employee_id, first_name
+   FROM employees
+   ORDER BY employee_id
+   OFFSET 5 ROWS FETCH NEXT 5 ROWS ONLY;
+   
+   
 -- sustitucion de variables
 --el and per san  "&" se puede sustituir por otro valor por ejemplo es para  
 --completar la sentencia, puedes poner "FROM employees" para completar la consulta
