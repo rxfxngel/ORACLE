@@ -56,6 +56,25 @@
   FROM   employees
   WHERE  job_id 
          NOT IN ('IT_PROG', 'ST_CLERK', 'SA_REP') ;
+         
+  
+--La tabla enumera el orden de prioridad por defecto.
+
+--1 Operadores aritméticos
+--2 Operador de Concatenación
+--3 Condiciones de comparación
+--4 IS [NOT] NULL, LIKE, [NOT] IN
+--5 [NOT] BETWEEN
+--6 Condición lógica NOT
+--7 Condición lógica AND
+--8 Condición lógica OR
+
+--Por ejemplo en la siguiente consulta se ejecuta primero el AND y luego el OR
+SELECT last_name, department_id, salary
+FROM   employees
+WHERE  department_id = 60
+OR     department_id = 80
+AND    salary > 10000;
 
 
 
