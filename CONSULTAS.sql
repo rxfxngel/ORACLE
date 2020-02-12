@@ -76,6 +76,56 @@ WHERE  department_id = 60
 OR     department_id = 80
 AND    salary > 10000;
 
+--clausula order by para ordenar registros
+
+  SELECT   last_name, job_id, department_id, hire_date
+  FROM     employees
+  ORDER BY hire_date ;
+
+  SELECT   first_name, last_name, salary
+  FROM     employees
+  ORDER BY salary DESC ;
+ 
+-- se puede usar el alias para hacer ORDER BY
+  SELECT employee_id, last_name, salary*12 annsal
+  FROM   employees
+  ORDER BY annsal ;
+  
+-- se puede ordenar por posicion de columna
+  SELECT   last_name, job_id, department_id, hire_date
+  FROM     employees
+  ORDER BY 3;
+
+-- se puede ordenar dos columnas si no pones ASC o DESC por defecto ordenar en forma ASC(ascendente de menor a mayor)
+  SELECT last_name, department_id, salary
+  FROM   employees
+  ORDER BY department_id, salary DESC;
+  
+-- limite de resultados
+   SELECT * FROM
+   departments
+   ORDER BY department_id
+   FETCH FIRST 5 ROWS ONLY;
+-- sustitucion de variables
+--el and per san  "&" se puede sustituir por otro valor por ejemplo es para  
+--completar la sentencia, puedes poner "FROM employees" para completar la consulta
+  SELECT employee_id &complete
+  
+--se puede reusar el valor de una variable
+--por ejemplo
+  
+  SELECT   employee_id, last_name, job_id, &&column_name
+  FROM     employees
+  ORDER BY &column_name ;
+  
+-- se puede definir la variable de entrada por ejemplo
+
+  DEFINE employee_num = 200
+  SELECT employee_id, last_name, salary, department_id
+  FROM   employees
+  WHERE  employee_id = &employee_num ;
+
+
 
 
 
