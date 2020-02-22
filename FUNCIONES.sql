@@ -17,3 +17,6 @@ SELECT first_name, LENGTH(first_name) "expr1",
        NULLIF(LENGTH(first_name), LENGTH(last_name)) result
 FROM   employees;
 
+--COALESCE retorna el primer valor no nulo
+SELECT COALESCE(null,null,3,4,7) PRIMER_NO_NULO  FROM DUAL 
+
