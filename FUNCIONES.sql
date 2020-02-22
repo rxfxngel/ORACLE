@@ -18,5 +18,13 @@ SELECT first_name, LENGTH(first_name) "expr1",
 FROM   employees;
 
 --COALESCE retorna el primer valor no nulo
-SELECT COALESCE(null,null,3,4,7) PRIMER_NO_NULO  FROM DUAL 
+SELECT COALESCE(null,null,3,4,7) PRIMER_NO_NULO  FROM DUAL;
 
+
+--- CONDICIONALES
+
+SELECT
+    CASE SALARY WHEN 2600 THEN 'DOS MIL SEISIENTOS'
+              ELSE 'SALARY'
+    END
+FROM EMPLOYEES
