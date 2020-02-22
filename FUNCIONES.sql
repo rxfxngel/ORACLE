@@ -1,14 +1,10 @@
-SELECT employee_id, TO_CHAR(hire_date, 'DD/MM/YYYY') Month_Hired
-FROM   employees
-WHERE  last_name = 'Higgins';
-
-
+--NVL
 --convierte el null a un valor especificado
 SELECT NVL(TO_CHAR('null'),'resultado') from dual;
 SELECT NVL(TO_CHAR(null),'resultado') from dual;
 
-
-
-SELECT last_name, salary, commission_pct, NVL(commission_pct, 0),
-   (salary*12) + (salary*12*NVL(commission_pct, 0)) AN_SAL
-FROM employees;
+--NL2 ( string1, value_if_not_null, value_if_null )
+SELECT last_name,  salary, commission_pct,
+       NVL2(commission_pct, 
+            'SAL+COMM', 'SAL') income
+FROM   employees WHERE department_id IN (50, 80);
