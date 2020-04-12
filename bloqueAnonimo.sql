@@ -6,7 +6,7 @@ DECLARE
 BEGIN
     nombre := 'JUAN';
     apellido := 'PEREZ';
-    dbms_output.put_line(nombre);
-    dbms_output.put_line(apellido);
-    dbms_output.put_line(nombre||' '|| apellido);
+    DBMS_OUTPUT.PUT_LINE(nombre);
+    DBMS_OUTPUT.PUT_LINE(apellido);
+    DBMS_OUTPUT.PUT_LINE(apellido);
 END;
