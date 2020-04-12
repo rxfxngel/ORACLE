@@ -1,7 +1,6 @@
-SET SERVEROUTPUT ON
+
 
 DECLARE
--- CTRL + F7 PARA FORMATEAR
     x   CONSTANT NUMBER := 10;
     z   NUMBER NOT NULL := 20;
 BEGIN
@@ -10,8 +9,6 @@ BEGIN
     dbms_output.put_line(z);
 END;
 
-
-SET SERVEROUTPUT ON
 
 DECLARE
     nombre     VARCHAR2(100);
