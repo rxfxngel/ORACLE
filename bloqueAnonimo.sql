@@ -10,3 +10,14 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE(apellido);
     DBMS_OUTPUT.PUT_LINE(apellido);
 END;
+
+SET SERVEROUTPUT ON
+
+DECLARE
+    num1 number;
+    num2 number;
+BEGIN
+    num1:=2;
+    num2:=3;
+    DBMS_OUTPUT.PUT_LINE(num1+num2);
+END;
