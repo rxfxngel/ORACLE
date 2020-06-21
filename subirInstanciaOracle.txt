@@ -1,0 +1,33 @@
+With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+[oraqa@srvdbqa01 ~]$ lsnrctl start MAMANI
+
+LSNRCTL for Linux: Version 12.1.0.2.0 - Production on 07-MAR-2020 14:43:21
+
+Copyright (c) 1991, 2014, Oracle.  All rights reserved.
+
+Starting /pu05/app/oraqa/product/12.1.0/dbhome_1/bin/tnslsnr: please wait...
+
+TNSLSNR for Linux: Version 12.1.0.2.0 - Production
+System parameter file is /pu05/app/oraqa/product/12.1.0/dbhome_1/network/admin/listener.ora
+Log messages written to /pu05/app/oraqa/diag/tnslsnr/srvdbqa01/morales/alert/log.xml
+Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=srvdbqa01.mecertifico.edu)(PORT=1571)))
+Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC1571)))
+
+Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=srvdbqa01.mecertifico.edu)(PORT=1571)))
+STATUS of the LISTENER
+------------------------
+Alias                     MORALES
+Version                   TNSLSNR for Linux: Version 12.1.0.2.0 - Production
+Start Date                07-MAR-2020 14:43:26
+Uptime                    0 days 0 hr. 0 min. 2 sec
+Trace Level               off
+Security                  ON: Local OS Authentication
+SNMP                      OFF
+Listener Parameter File   /pu05/app/oraqa/product/12.1.0/dbhome_1/network/admin/listener.ora
+Listener Log File         /pu05/app/oraqa/diag/tnslsnr/srvdbqa01/morales/alert/log.xml
+Listening Endpoints Summary...
+  (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=srvdbqa01.mecertifico.edu)(PORT=1571)))
+  (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC1571)))
+The listener supports no services
+The command completed successfully
+[oraqa@srvdbqa01 ~]$
