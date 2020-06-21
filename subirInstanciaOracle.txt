@@ -1,3 +1,55 @@
+login as: root
+root@192.168.2.142's password:
+Last login: Sat Feb 29 16:54:06 2020 from 192.168.2.1
+[root@srvdbqa01 ~]#
+[root@srvdbqa01 ~]# cat /etc/oratab
+#
+
+
+
+# This file is used by ORACLE utilities.  It is created by root.sh
+# and updated by either Database Configuration Assistant while creating
+# a database or ASM Configuration Assistant while creating ASM instance.
+
+# A colon, ':', is used as the field terminator.  A new line terminates
+# the entry.  Lines beginning with a pound sign, '#', are comments.
+#
+# Entries are of the form:
+#   $ORACLE_SID:$ORACLE_HOME:<N|Y>:
+#
+# The first and second fields are the system identifier and home
+# directory of the database respectively.  The third field indicates
+# to the dbstart utility that the database should , "Y", or should not,
+# "N", be brought up at system boot time.
+#
+# Multiple entries with the same $ORACLE_SID are not allowed.
+#
+#
+MORALES:/pu05/app/oraqa/product/12.1.0/dbhome_1:N
+[root@srvdbqa01 ~]# su - oraqa
+[oraqa@srvdbqa01 ~]$ echo $ORACLE_SID
+
+[oraqa@srvdbqa01 ~]$ export ORACLE_SID=MAMANI
+[oraqa@srvdbqa01 ~]$ sqlplus / as sysdba
+
+SQL*Plus: Release 12.1.0.2.0 Production on Sat Mar 7 14:42:41 2020
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+Connected to an idle instance.
+
+SQL> startup
+ORACLE instance started.
+
+Total System Global Area  805306368 bytes
+Fixed Size                  2929552 bytes
+Variable Size             318770288 bytes
+Database Buffers          478150656 bytes
+Redo Buffers                5455872 bytes
+Database mounted.
+Database opened.
+SQL> exit
+Disconnected from Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
 With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
 [oraqa@srvdbqa01 ~]$ lsnrctl start MAMANI
 
