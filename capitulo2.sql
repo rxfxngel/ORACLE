@@ -232,4 +232,25 @@ PRINT b_phone_no
 
 
 
-
+------------------------------
+-- manejo de excepciones
+        
+/*
+Cuando desarrolla procedimientos que se llaman desde otros procedimientos, debe tener en cuenta
+los efectos que las excepciones manejadas y no manejadas tienen en la transacción y la llamada
+procedimiento.
+Cuando se genera una excepción en un procedimiento llamado, el control pasa inmediatamente al
+sección de excepción de ese bloque. Una excepción se considera manejada si la sección de excepción
+proporciona un controlador para la excepción planteada.
+Cuando se produce una excepción y se maneja, se produce el siguiente flujo de código:
+1. Se levanta la excepción.
+2. El control se transfiere al controlador de excepciones.
+3. El bloque está terminado.
+4. El programa / bloque que llama continúa ejecutándose como si no hubiera pasado nada.
+Si se inició una transacción (es decir, si hay instrucciones del lenguaje de manipulación de datos [DML]
+ejecutado antes de ejecutar el procedimiento en el que se generó la excepción), luego el
+La transacción no se ve afectada. Una operación DML se revierte si se realizó dentro del
+procedimiento ante la excepción.
+Nota: Puede finalizar explícitamente una transacción ejecutando una operación COMMIT o ROLLBACK en
+La sección de excepción.        
+*/
