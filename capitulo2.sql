@@ -254,3 +254,30 @@ procedimiento ante la excepción.
 Nota: Puede finalizar explícitamente una transacción ejecutando una operación COMMIT o ROLLBACK en
 La sección de excepción.        
 */
+        
+CREATE PROCEDURE add_department(
+p_name VARCHAR2, p_mgr NUMBER, p_loc NUMBER) IS
+BEGIN
+INSERT INTO DEPARTMENTS (department_id,
+department_name, manager_id, location_id)
+VALUES (DEPARTMENTS_SEQ.NEXTVAL, p_name, p_mgr, p_loc);
+DBMS_OUTPUT.PUT_LINE('Added Dept: '|| p_name);
+EXCEPTION
+WHEN OTHERS THEN
+DBMS_OUTPUT.PUT_LINE('Err: adding dept: '|| p_name);
+END;
+        
+--otro stored que llama al anterior
+CREATE PROCEDURE create_departments IS
+BEGIN
+add_department('Media', 100, 1800);
+add_department('Editing', 99, 1800);
+add_department('Advertising', 101, 1800);
+END;
+        
+--ejecutando el ultimo stored
+set SERVEROUTPUT on;
+begin
+  create_departments();
+end;
+
