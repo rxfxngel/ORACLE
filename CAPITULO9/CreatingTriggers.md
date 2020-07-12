@@ -43,5 +43,4 @@ hace que se ejecute el disparador. Los posibles eventos son:
 - UPDATE [OF column]
 - DELETE
 
-Un cuerpo desencadenante determina qué acción se realiza y se
-un bloque PL / SQL o una LLAMADA a un procedimiento
+ Un cuerpo desencadenante determina qué acción se realiza y es un bloque PL / SQL o una LLAMADA a un procedimiento.
