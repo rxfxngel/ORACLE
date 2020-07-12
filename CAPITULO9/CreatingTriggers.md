@@ -60,3 +60,10 @@ BEGIN
 [EXCEPTION . . .]
 END [trigger_name];
 ```
+
+```
+timing = BEFORE | AFTER | INSTEAD OF
+```
+```
+event = INSERT | DELETE | UPDATE | UPDATE OF column_list
+```
