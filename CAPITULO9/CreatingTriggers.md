@@ -21,6 +21,6 @@ Se puede definir un trigger en la tabla, vista, esquema o base de datos (todos l
 Tipos de eventos de activación
 Puede escribir desencadenantes que se activan siempre que uno de los siguientes
 las operaciones ocurren en la base de datos:
-• Una declaración de manipulación de base de datos (DML) (DELETE, INSERT o UPDATE)
-• Una declaración de definición de base de datos (DDL) (CREATE, ALTER o DROP)
-• Una operación de base de datos como SERVERERROR, LOGON, LOGOFF, STARTUP o SHUTDOWN
+- Una declaración de manipulación de base de datos (DML) (DELETE, INSERT o UPDATE)
+- Una declaración de definición de base de datos (DDL) (CREATE, ALTER o DROP)
+- Una operación de base de datos como SERVERERROR, LOGON, LOGOFF, STARTUP o SHUTDOWN
