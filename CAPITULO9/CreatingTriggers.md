@@ -75,3 +75,18 @@ event = INSERT | DELETE | UPDATE | UPDATE OF column_list
 | Es el valor por defecto al crear un trigger  | Use la cláusula FOR EACH ROW cuando cree un trigger |
 | Se dispara una vez por el evento desencadenante  |  Se dispara una vez por cada fila afectada por el evento desencadenante |
 | Se dispara una vez, incluso si no hay filas afectadas  | No se dispara si el evento desencadenante no afecta a ninguna fila  |
+
+Ejemplo
+ ```sql
+CREATE OR REPLACE TRIGGER secure_emp
+BEFORE INSERT ON employees
+BEGIN
+IF (TO_CHAR(SYSDATE,'DY') IN ('SAT','SUN')) OR
+(TO_CHAR(SYSDATE,'HH24:MI')
+NOT BETWEEN '08:00' AND '18:00') THEN
+RAISE_APPLICATION_ERROR(-20500, 'You may insert'
+||' into EMPLOYEES table only during '
+||' normal business hours.');
+END IF;
+END;
+ ``` 
