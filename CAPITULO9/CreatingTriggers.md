@@ -44,3 +44,19 @@ hace que se ejecute el disparador. Los posibles eventos son:
 - DELETE
 
  Un cuerpo desencadenante determina qué acción se realiza y es un bloque PL / SQL o una LLAMADA a un procedimiento.
+ 
+ ## Creando triggers DML con la instrucción CREATE TRIGGER
+```
+CREATE [OR REPLACE] TRIGGER trigger_name
+timing –- when to fire the trigger
+event1 [OR event2 OR event3]
+ON object_name
+[REFERENCING OLD AS old | NEW AS new]
+FOR EACH ROW –- default is statement level trigger
+WHEN (condition)]]
+DECLARE]
+BEGIN
+... trigger_body –- executable statements
+[EXCEPTION . . .]
+END [trigger_name];
+```
