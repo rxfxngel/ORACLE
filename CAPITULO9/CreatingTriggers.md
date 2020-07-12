@@ -10,7 +10,5 @@ Después de completar esta lección aprendera a:
 
 
 ## ¿Qué son los Triggers?
-- Un disparador es un bloque PL / SQL que se almacena en la base de datos.
-y disparado (ejecutado) en respuesta a un evento específico.
-- La base de datos Oracle ejecuta automáticamente un disparador
-cuando ocurren condiciones especificadas.
+- Un disparador es un bloque PL / SQL que se almacena en la base de datos y se dispara (ejecuta) en respuesta a un evento específico.
+- La base de datos Oracle ejecuta automáticamente un activador cuando se producen condiciones específicas.
