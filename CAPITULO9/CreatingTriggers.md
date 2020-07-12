@@ -1,1 +1,1 @@
-#CREANDO TRIGGERS(Disparadores)
+# El encabezado más largo
