@@ -24,3 +24,13 @@ las operaciones ocurren en la base de datos:
 - Una declaración de manipulación de base de datos (DML) (DELETE, INSERT o UPDATE)
 - Una declaración de definición de base de datos (DDL) (CREATE, ALTER o DROP)
 - Una operación de base de datos como SERVERERROR, LOGON, LOGOFF, STARTUP o SHUTDOWN
+
+## Escenarios de aplicaciones comerciales para implementar disparadores
+Puede usar desencadenantes para:
+- seguridad
+- Auditoría
+- Integridad de los datos
+- Integridad referencial
+- replicación de tablas
+- Calcular datos derivados automáticamente
+- El registro de eventos
