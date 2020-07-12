@@ -39,8 +39,8 @@ Puede usar desencadenantes para:
 ## Tipo de eventos trigger y cuerpo(body)
  Un tipo de evento desencadenante determina qué instrucción DML
 hace que se ejecute el disparador. Los posibles eventos son:
-– INSERT
-– UPDATE [OF column]
-– DELETE
+- INSERT
+- UPDATE [OF column]
+- DELETE
 Un cuerpo desencadenante determina qué acción se realiza y se
 un bloque PL / SQL o una LLAMADA a un procedimiento
