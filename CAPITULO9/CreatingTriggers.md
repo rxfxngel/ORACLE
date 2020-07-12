@@ -14,3 +14,6 @@ Después de completar esta lección aprendera a:
 - La base de datos Oracle ejecuta automáticamente un activador cuando se producen condiciones específicas.
 
 Los **triggers** son similares a los procedimientos almacenados. Un trigger almacenado en la base de datos contiene PL / SQL en forma de un bloque anónimo, una declaración de llamada o un bloque disparador compuesto. Sin embargo, los procedimientos y los triggers difieren en la forma en que se invocan. Un usuario, aplicación o activador ejecuta explícitamente un procedimiento. La base de datos Oracle dispara implícitamente los triggers cuando ocurre un evento desencadenante, sin importar qué usuario esté conectado o qué aplicación se esté utilizando.
+
+## Definiendo triggers
+Se puede definir un disparador en la tabla, vista, esquema o base de datos (todos los usuarios).
