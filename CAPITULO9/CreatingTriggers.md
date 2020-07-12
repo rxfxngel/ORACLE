@@ -67,3 +67,11 @@ timing = BEFORE | AFTER | INSTEAD OF
 ```
 event = INSERT | DELETE | UPDATE | UPDATE OF column_list
 ```
+
+## Triggers a nivel de sentencias vs Triggers a nivel de filas
+
+| Triggers a nivel de sentencias  | Triggers a nivel de filas  |
+|---|---|
+| Es el valor por defecto al crear un trigger  | Use la cláusula FOR EACH ROW cuando cree un trigger |
+| Se dispara una vez por el evento desencadenante  |  Se dispara una vez por cada fila afectada por el evento desencadenante |
+| Se dispara una vez, incluso si no hay filas afectadas  | No se dispara si el evento desencadenante no afecta a ninguna fila  |
