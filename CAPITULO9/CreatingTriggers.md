@@ -16,4 +16,11 @@ Después de completar esta lección aprendera a:
 Los **triggers** son similares a los procedimientos almacenados. Un trigger almacenado en la base de datos contiene PL / SQL en forma de un bloque anónimo, una declaración de llamada o un bloque disparador compuesto. Sin embargo, los procedimientos y los triggers difieren en la forma en que se invocan. Un usuario, aplicación o activador ejecuta explícitamente un procedimiento. La base de datos Oracle dispara implícitamente los triggers cuando ocurre un evento desencadenante, sin importar qué usuario esté conectado o qué aplicación se esté utilizando.
 
 ## Definiendo triggers
-Se puede definir un disparador en la tabla, vista, esquema o base de datos (todos los usuarios).
+Se puede definir un trigger en la tabla, vista, esquema o base de datos (todos los usuarios).
+
+Tipos de eventos de activación
+Puede escribir desencadenantes que se activan siempre que uno de los siguientes
+las operaciones ocurren en la base de datos:
+• Una declaración de manipulación de base de datos (DML) (DELETE, INSERT o UPDATE)
+• Una declaración de definición de base de datos (DDL) (CREATE, ALTER o DROP)
+• Una operación de base de datos como SERVERERROR, LOGON, LOGOFF, STARTUP o SHUTDOWN
