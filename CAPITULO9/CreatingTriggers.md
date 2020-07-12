@@ -36,7 +36,7 @@ Puede usar desencadenantes para:
 - El registro de eventos
 
 
-## Tipo de eventos trigger y cuerpo(Body)
+## Tipo de eventos trigger y cuerpo(body)
  Un tipo de evento desencadenante determina qué instrucción DML
 hace que se ejecute el disparador. Los posibles eventos son:
 – INSERT
