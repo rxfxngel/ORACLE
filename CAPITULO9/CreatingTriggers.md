@@ -90,7 +90,7 @@ RAISE_APPLICATION_ERROR(-20500, 'You may insert'
 END IF;
 END;
  ``` 
- ## probando trigger
+ probando trigger
  ```sql
 INSERT INTO employees (employee_id, last_name,
 first_name, email, hire_date, job_id, salary,
@@ -98,7 +98,7 @@ department_id)
 VALUES (300, 'Smith', 'Rob', 'RSMITH', SYSDATE,
 'IT_PROG', 4500, 60);
  ``` 
- ## Usando predicados condicionales
+ ### Usando predicados condicionales
  ```sql
 CREATE OR REPLACE TRIGGER secure_emp BEFORE
 INSERT OR UPDATE OR DELETE ON employees
