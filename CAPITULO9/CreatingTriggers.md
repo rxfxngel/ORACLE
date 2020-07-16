@@ -135,3 +135,8 @@ RAISE_APPLICATION_ERROR (-20202,
 END IF;
 END;
  ```
+ ```sql
+UPDATE employees
+SET salary = 15500
+WHERE last_name = 'Russell';
+ ```
