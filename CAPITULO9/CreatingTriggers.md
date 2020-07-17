@@ -148,3 +148,10 @@ crea y llena dos estructuras de datos:
 - NEW: contiene los nuevos valores
 
 NEW y OLD tienen la misma estructura que un registro declarado utilizando el %ROWTYPE en la tabla a la que se crea el Trigger.
+
+
+|Data Operations |Old Value |New Value|
+|---|---|---|
+|INSERT |NULL |Inserted value|
+|UPDATE |Value before update |Value after update|
+|DELETE |Value |before delete |NULL|
