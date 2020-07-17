@@ -152,6 +152,6 @@ NEW y OLD tienen la misma estructura que un registro declarado utilizando el %RO
 
 |Data Operations |Old Value |New Value|
 |---|---|---|
-|INSERT |NULL |Inserted value|
-|UPDATE |Value before update |Value after update|
-|DELETE |Value |before delete |NULL|
+|INSERT |NULL |Valor insertado|
+|UPDATE |Valor antes de actualizar |Valor después de la actualización|
+|DELETE |Valor antes de borrar |NULL|
