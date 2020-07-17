@@ -182,3 +182,19 @@ VALUES (USER, SYSDATE, :OLD.employee_id,
 :NEW.job_id, :OLD.salary, :NEW.salary);
 END;
  ```
+ 
+ 
+### Using OLD and NEW Qualifiers: Example
+ ```sql
+INSERT INTO employees (employee_id, last_name, job_id,
+salary, email, hire_date)
+VALUES (999, 'Temp emp', 'SA_REP', 6000, 'TEMPEMP',
+TRUNC(SYSDATE))
+/
+UPDATE employees
+SET salary = 7000, last_name = 'Smith'
+WHERE employee_id = 999
+/
+SELECT *
+FROM audit_emp;
+ ```
