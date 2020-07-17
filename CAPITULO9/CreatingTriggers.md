@@ -140,3 +140,11 @@ UPDATE employees
 SET salary = 15500
 WHERE last_name = 'Russell';
  ```
+### Using OLD and NEW Qualifiers
+
+Cuando se dispara un disparador de nivel de fila, el motor de tiempo de ejecución PL / SQL
+crea y llena dos estructuras de datos:
+- OLD: almacena los valores originales del registro procesado por el Trigger
+- NEW: contiene los nuevos valores
+
+NEW y OLD tienen la misma estructura que un registro declarado utilizando el %ROWTYPE en la tabla a la que se crea el Trigger.
