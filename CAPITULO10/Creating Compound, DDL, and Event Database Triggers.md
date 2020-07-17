@@ -16,11 +16,6 @@ Un disparador único en una tabla que le permite especificar acciones para cada 
 
 
 Puede usar desencadenantes compuestos para:
-# Programe un enfoque donde desee las acciones que desea.
-implementar para los diversos puntos de tiempo para compartir comunes
-datos
-# Acumula filas destinadas a una segunda tabla para que puedas
-puede insertarlos a granel periódicamente
-# Evite el error de la tabla de mutaciones (ORA-04091) permitiendo
-filas destinadas a una segunda tabla para acumular y luego
-insertarlos a granel
+- Programe un enfoque donde desee las acciones que desea. implementar para los diversos puntos de tiempo para compartir comunes datos
+- Acumula filas destinadas a una segunda tabla para que puedas puede insertarlos a granel periódicamente
+- Evite el error de la tabla de mutaciones (ORA-04091) permitiendo filas destinadas a una segunda tabla para acumular y luego insertarlos a granel
