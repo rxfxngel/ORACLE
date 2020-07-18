@@ -143,3 +143,21 @@ trigger_body
 |CREATE |Any database object is created using the CREATE command.|
 |ALTER |Any database object is altered using the ALTER command.|
 |DROP |Any database object is dropped using the DROP command.|
+
+
+## Creating Triggers on System Events
+```sql
+CREATE [OR REPLACE] TRIGGER trigger_name
+BEFORE | AFTER -- timing
+[database_event1 [OR database_event2 OR ...]]
+ON {DATABASE | SCHEMA}
+trigger_body
+```
+
+|Database Event Triggers |Fires When|
+|---|---|
+|AFTER SERVERERROR| An Oracle error is raised|
+|AFTER LOGON| A user logs on to the database|
+|BEFORE LOGOFF| A user logs off the database|
+|AFTER STARTUP| The database is opened|
+|BEFORE SHUTDOWN| The database is shut down normally|
