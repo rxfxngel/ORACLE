@@ -36,4 +36,27 @@ Why would it generate an error at run tune?
 - D. If you declare a local exception in a subblock and a global exception in the outer block, the global declaration overrides the local exceptio
 
 `Answer: AC`
-
+**NEW QUESTION 4:** Examine the following PL/SQL code:
+```sql
+  DECLARE
+    CURSOR c1 IS SELECT last_name FROM employees  ORDER BY last_name;
+    name1 employees.last_name%TYPE;
+    name2 employees.last_name%TYPE;
+    name3 employees.last_name%TYPE;
+    name4 employees.last_name%TYPE;
+  BEGIN
+    OPEN c1;
+    FETCH c1 INTO name1;
+    FETCH c1 INTO name2;
+    FETCH c1 INTO name3;
+    FETCH c1 INTO name4;
+    CLOSE c1;
+  END;
+  /
+```
+Which statement is true about the fetch statements in the PL/SQL code?
+- A. Each fetch retrieves the first row and assigns values to the target variable
+- B. Each fetch retrieves the next consecutive row and assigns values to the target variable
+- C. They produce an error because you must close and reopen the cursor before each fetch -statemen
+- D. Only the first fetch retrieves the first row and assigns values to the target variables- the second produces an erro
+`Answer: B`
