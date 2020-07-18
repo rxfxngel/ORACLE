@@ -19,3 +19,14 @@ Puede usar desencadenantes compuestos para:
 - Programe un enfoque donde desee las acciones que desea. implementar para los diversos puntos de tiempo para compartir comunes datos
 - Acumula filas destinadas a una segunda tabla para que puedas puede insertarlos a granel periódicamente
 - Evite el error de la tabla de mutaciones (ORA-04091) permitiendo filas destinadas a una segunda tabla para acumular y luego insertarlos a granel
+
+
+
+## Activar restricciones en tablas de mutación
+### Una tabla de mutaciones es:
+- Una tabla que está siendo modificada por una instrucción UPDATE, DELETE o INSERT, o
+- Una tabla que podría actualizarse por los efectos de una restricción DELETE CASCADE
+###  La sesión que emitió la declaración de activación no puede consultar ni modificar una tabla de mutaciones.
+###  Esta restricción evita que un activador vea un conjunto de datos inconsistente.
+###  Esta restricción se aplica a todos los desencadenantes que utilizan la cláusula FOR EACH ROW.
+###  Las vistas que se modifican en los desencadenantes INSTEAD OF no se consideran mutantes
