@@ -129,3 +129,17 @@ range');
 END check_salary;
 
 ```
+## Creating Triggers on DDL Statements
+```sql
+CREATE [OR REPLACE] TRIGGER trigger_name
+BEFORE | AFTER -- Timing
+[ddl_event1 [OR ddl_event2 OR ...]]
+ON {DATABASE | SCHEMA}
+trigger_body
+```
+
+|Sample DDL Events| Fires When|
+|---|---|
+|CREATE |Any database object is created using the CREATE command.|
+|ALTER |Any database object is altered using the ALTER command.|
+|DROP |Any database object is dropped using the DROP command.|
