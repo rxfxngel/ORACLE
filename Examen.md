@@ -7,7 +7,7 @@ NEW QUESTION 1 : Which statement is true about triggers on data definition langu
 - C. They are fired only when the owner of the object Issues the DDL statemen
 - D. They can be used to track changes to a table, table space, view, or synony
 ```
-**Answer: D**
+Answer: D
 ```
 NEW QUESTION 2 Examine the following package specification.
 ```
