@@ -1,6 +1,6 @@
 # Exam Questions 1Z0-144
 
-NEW QUESTION 1 : Which statement is true about triggers on data definition language (DDL) statements?
+**NEW QUESTION 1 :** Which statement is true about triggers on data definition language (DDL) statements?
 
 - A. They can be used to track changes only to a table or inde
 - B. They can be defined by all users in the database or only by a specific use
