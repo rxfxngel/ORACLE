@@ -54,3 +54,14 @@ UPDATE employees
 SET salary = 3400
 WHERE last_name = 'Stiles';
 ```
+Resultado
+```
+Error que empieza en la línea: 1 del comando :
+UPDATE employees
+SET salary = 3400
+WHERE last_name = 'Stiles'
+Informe de error -
+ORA-04091: la tabla HR.EMPLOYEES está mutando, puede que el disparador/la función no puedan verla
+ORA-06512: en "HR.CHECK_SALARY", línea 5
+ORA-04088: error durante la ejecución del disparador 'HR.CHECK_SALARY'
+```
