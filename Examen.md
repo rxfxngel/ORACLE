@@ -29,3 +29,11 @@ Why would it generate an error at run tune?
 
 `Answer: B`
 
+**NEW QUESTION 3:** Which two statements are true about PL/SQL exception propagation? (Choose two.)
+- A. The exception reproduces Itself In successive enclosing blocks until a handler is foun
+- B. Exception- can propagate across the remote subprograms that are called through database link
+- C. If you declare a local exception in a subblock and a global exception in the outer block, the local declaration overrides the global exceptio
+- D. If you declare a local exception in a subblock and a global exception in the outer block, the global declaration overrides the local exceptio
+
+`Answer: AC`
+
