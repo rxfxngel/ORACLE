@@ -9,7 +9,7 @@
 
 `Answer: D`
 
-NEW QUESTION 2 Examine the following package specification.
+**NEW QUESTION 2:** Examine the following package specification.
 ```
 SQL>CREATE OR REPLACE PACKAGE emp_pkf IS
 PROCEDURE search_emp (empdet NUMBER);
@@ -26,3 +26,5 @@ Why would it generate an error at run tune?
 - B. Because function cannot differ only in return typ
 - C. Because all the functions and procedures In the package cannot have the same number of parameters with the same parameter name
 - D. Because the search EMP (EMPDET NUMBER) procedure and the SEARCH_DEPT (EMPDET NUMBER) cannot have identical parameter names and data types
+`Answer: B`
+
