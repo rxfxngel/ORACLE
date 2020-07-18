@@ -89,7 +89,6 @@ INDEX BY VARCHAR2(80);
 department_min_salaries department_salaries_t;
 department_max_salaries department_salaries_t;
 -- example continues on next slide
-. . .
 BEFORE STATEMENT IS
 BEGIN
 SELECT MIN(salary), MAX(salary), NVL(department_id, -1)
