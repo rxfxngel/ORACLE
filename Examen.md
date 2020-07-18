@@ -6,9 +6,9 @@ NEW QUESTION 1 : Which statement is true about triggers on data definition langu
 - B. They can be defined by all users in the database or only by a specific use
 - C. They are fired only when the owner of the object Issues the DDL statemen
 - D. They can be used to track changes to a table, table space, view, or synony
-```
-Answer: D
-```
+
+`Answer: D`
+
 NEW QUESTION 2 Examine the following package specification.
 ```
 SQL>CREATE OR REPLACE PACKAGE emp_pkf IS
