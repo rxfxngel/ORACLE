@@ -59,4 +59,5 @@ Which statement is true about the fetch statements in the PL/SQL code?
 - B. Each fetch retrieves the next consecutive row and assigns values to the target variable
 - C. They produce an error because you must close and reopen the cursor before each fetch -statemen
 - D. Only the first fetch retrieves the first row and assigns values to the target variables- the second produces an erro
+
 `Answer: B`
