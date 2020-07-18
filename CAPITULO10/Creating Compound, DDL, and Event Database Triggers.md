@@ -129,7 +129,7 @@ range');
 END check_salary;
 
 ```
-## Creating Triggers on DDL Statements
+## Creando Triggers en sentencias DDL
 ```sql
 CREATE [OR REPLACE] TRIGGER trigger_name
 BEFORE | AFTER -- Timing
