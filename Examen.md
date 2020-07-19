@@ -135,4 +135,4 @@ EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                
 - C. King current sysdate 1500
 - D. King current sysdate 24000
 
-`Answer: A`
+`Answer: A` :rage: *warning*
