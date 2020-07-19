@@ -90,3 +90,12 @@ Why does the code give an error on execution?
 - D. because the WORD_LIST parameter in out mode cannot be of a record data type
 
 `Answer: A`
+
+
+**NEW QUESTION 6:** Which two statements are true about statement-level and row-level triggers? (Choose two.)
+- A. A row trigger fires once even if no rows are affecte
+- B. A statement trigger fires once even if no rows are affecte
+- C. Row triggers are useful if the trigger action depends on the data of rows that are affected or on data that is provided by the triggering event itsel
+- D. Statement triggers are useful if the trigger action depends on the data of rows that are affected or on data that is provided by the triggering event itsel
+
+`Answer: BC`
