@@ -120,6 +120,16 @@ BEGIN
 
 END;
 ```
+The record for the employee with employee__id 100 in the employees table is as follows;
+```
+SQL> SELECT employee_id,first_name,last_name,email,hire_date,job_id,salary 
+  2          FROM EMPLOYEES WHERE employee_id= 100;
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                                              HIRE_DAT JOB_ID         SALARY
+----------- -------------------- ------------------------- -------------------------------------------------- -------- ---------- ----------
+        100 Steven               King                      SKING                                              17/06/87 AD_PRES         24000
+```        
+        
 - A. King 17-JUN-87 1500
 - B. King 17-JUN-87 24000
 - C. King current sysdate 1500
