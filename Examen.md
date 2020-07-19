@@ -84,9 +84,9 @@ END wording;
 /
 ```
 Why does the code give an error on execution?
-A. because the WORD_LIST variable is not visible in procedure wording
-B. because the lexicon variable is not visible in procedure ADD_ENTRY
-C. because the lexicon variable is not initialized in procedure wording
-D. because the WORD_LIST parameter in out mode cannot be of a record data type
+- A. because the WORD_LIST variable is not visible in procedure wording
+- B. because the lexicon variable is not visible in procedure ADD_ENTRY
+- C. because the lexicon variable is not initialized in procedure wording
+- D. because the WORD_LIST parameter in out mode cannot be of a record data type
 
 `Answer: A`
