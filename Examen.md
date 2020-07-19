@@ -99,3 +99,30 @@ Why does the code give an error on execution?
 - D. Statement triggers are useful if the trigger action depends on the data of rows that are affected or on data that is provided by the triggering event itsel
 
 `Answer: BC`
+
+**NEW QUESTION 7:** View the Exhibit to examine the PL/SQL code.
+```sql
+DECLARE
+    type t_rec is record
+    (
+        v_sal    number(8),
+        v_minsal number(8) default 1000,
+        v_hire_date employees.hire_date%type,
+        v_rec1 employees%rowtype
+    );
+    v_myrec t_rec;
+BEGIN
+    v_myrec.v_sal:=v_myrec.v_minsal+500;
+    v_myrec.v_hire_date := sysdate;
+    SELECT * INTO v_myrec.v_rec1
+        FROM EMPLOYEES WHERE employee_id= 100;
+    DBMS_OUTPUT.PUT_LINE(v_myrec.v_rec1.last_name ||' '||to_char(v_myrec.v_hire_date)||' '||to_char(v_myrec.v_sal));
+
+END;
+```
+- A. King 17-JUN-87 1500
+- B. King 17-JUN-87 24000
+- C. King current sysdate 1500
+- D. King current sysdate 24000
+
+`Answer: A`
