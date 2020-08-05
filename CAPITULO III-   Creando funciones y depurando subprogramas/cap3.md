@@ -2,10 +2,10 @@ Creating Functions and
 Debugging Subprograms
 
 Una función:
-• Es un bloque PL / SQL con nombre que devuelve un valor
-• Se puede almacenar en la base de datos como un objeto de esquema para ejecución repetida
-• Se llama como parte de una expresión o se usa para proporcionar un valor de parámetro para otro subprograma
-• Se puede agrupar en paquetes PL / SQL
+- Es un bloque PL / SQL con nombre que devuelve un valor
+- Se puede almacenar en la base de datos como un objeto de esquema para ejecución repetida
+- Se llama como parte de una expresión o se usa para proporcionar un valor de parámetro para otro subprograma
+- Se puede agrupar en paquetes PL / SQL
 
  ```sql
 CREATE [OR REPLACE] FUNCTION function_name
